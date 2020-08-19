@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Терем</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Регистрация сертификата «Дом в подарок»</h1>
+        <img class="img-fluid" src="img/header-picture.jpg" alt="header-picture">
+        <div class="row reg">
+                <form method="GET" id="form-reg">
+                    <h3 class="reg__form-title">Регистрация сертификата</h3>
+                    <p class="reg__form-text">Для регистрации сертификата - введите код сертификата и ваши контактные данные</p>
+                        <input name="reg__code" class="form-control reg__form-input" type="text" placeholder="Код сертификата">
+                        <input name="reg__name" class="form-control reg__form-input" type="text" placeholder="Ваше имя">
+                        <input name="reg__tel" class="form-control reg__form-input" type="text" placeholder="Ваш телефон">
+                        <input name="reg__email" class="form-control reg__form-input" type="text" placeholder="Ваш е-мейл">
+                        <button class="btn reg__form-btn submit mx-auto d-block" type="submit">ОТПРАВИТЬ ЗАЯВКУ НА УЧАСТИЕ В АКЦИИ</button>
+                    <p class="btn-text">Отправляя форму Вы соглашаетесь с <a class="policy" href="#">Политикой обработки данных</a></p>
+                </form>
+        </div>
+        <div class="row info">
+            <div class="col">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne" class="btn info-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Что дает сертификат?
+                            <img class="arrow" src="img/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Сертификат даёт право участвовать в акции «Дом в подарок». Номер сертификата является вашим
+                        уникальным номером участника. Не забудьте его зарегистрировать на нашем сайте и взять с собой на
+                        розыгрыш главного приза 16 декабря 2018 года. Владелец сертификата может принимать участие в
+                        розыгрыше только при наличии акта приёмки-передачи строения, подтверждающего окончание
+                        строительства.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo" class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Где получить сертификат?
+                            <img class="arrow" src="img/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Сертификат выдаётся всем клиента строительной компании «Теремъ» во время подписания договора на
+                        строительство дома или бани на территории выставочного комплекса компании по адресу: г. Москва, ул.
+                        Зеленодольская, вл. 42. Сертификаты выдаются в период с 6 по 19 сентября 2018 года включительно.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row info">
+            <h3 class="info-title">Если остались вопросы по участию в акции</h3>
+            <p class="info-text">Оставьте телефонный номер и наши специалисты свяжутся с Вами через 30 секунд</p>
+        </div>
+        <form method="GET" id="form-info">
+        <div class="row info d-flex request">
+            <input name="name" class="form-control info-input name" type="text" placeholder="Ваше имя">
+            <input name="tel" class="form-control info-input tel" type="tel" placeholder="+7 ( _ _ _ ) _ _ _  _ _  _ _">
+            <button class="btn button-info submit" type="submit">ЗАЯВКА НА КОНСУЛЬТАЦИЮ</button>
+        </div>
+            <input name="checkbox" type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Я принимаю условия Политики обработки данных</label>
+    </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
